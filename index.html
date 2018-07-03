@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+<style>
+  picture{
+    display: flex;
+   justify-content: center;
+  }
+</style>
+  </head>
+  <body>
+     <h2>Images</h2>
+     <p>Resize the browser to see different versions of the picture loading at different viewport sizes. The browser looks for the first <source> element where the media query matches the user's current viewport width, and fetches the image specified in the srcset attribute of that <source> element.</p>
+    <picture>
+      <source  media="(min-width:769px)" srcset="kitten-large.png" >
+        <source srcset="kitten-medium.png" media="(min-width:481px)">
+          <img src="kitten-small.png" alt="kitten-small">
+    </picture>
+
+  </body>
+</html>
